@@ -25,7 +25,7 @@ function Form() {
     const formSubmit = event => {
       event.preventDefault();  
       
-       const data = { name, phone: number };
+       const data = { name, number };
     if (
       contacts.find(
         contact => contact.name.toLowerCase() === name.toLowerCase()

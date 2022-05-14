@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useFetchContactsQuery } from '../../redux/slice';
 import { useSelector } from 'react-redux';
 import ContactItem from "components/ContactItem";
+import Loader from "components/Loader";
 
 
 
@@ -22,7 +23,7 @@ function ContactList() {
 
 return (
     <>
-        {isFetching && <h3>Loading...</h3>}
+        {isFetching && <Loader />}
         {contacts && (
             <ul>
                 {filtredContacts.map(contact => (
