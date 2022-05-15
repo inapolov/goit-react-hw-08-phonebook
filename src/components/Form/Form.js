@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useFetchContactsQuery, useCreateContactMutation} from '../../redux/slice';
 import PropTypes from 'prop-types';
 import styles from './Form.module.css';
+import Button from '@mui/material/Button';
 
 function Form() {
   
@@ -75,7 +76,8 @@ function Form() {
                 className={styles.input}
             />
           </label>
-          <button type="submit" className={styles.button} disabled={isLoading}>Add contact</button>
+            {/* <button type="submit" className={styles.button} disabled={isLoading}>Add contact</button> */}
+            <Button type="submit" variant="contained" disabled={isLoading}>Add contact</Button>
         </form>
         );
     

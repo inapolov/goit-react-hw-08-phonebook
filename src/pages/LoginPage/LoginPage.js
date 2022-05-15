@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { authOperations } from '../../redux/auth';
 import styles from './LoginPage.module.css';
+import Button from '@mui/material/Button';
 
 
 export default function LoginView() {
@@ -52,7 +53,7 @@ export default function LoginView() {
           />
         </label>
 
-        <button type="submit" className={styles.button}>Log in</button>
+        <Button type="submit" variant="contained" >Log in</Button>
       </form>
     </div>
   );

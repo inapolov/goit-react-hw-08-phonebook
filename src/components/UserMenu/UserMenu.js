@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { authSelectors, authOperations } from '../../redux/auth';
 import styles from './UserMenu.module.css';
+import Button from '@mui/material/Button';
 
 
 export default function UserMenu() {
@@ -10,9 +11,9 @@ export default function UserMenu() {
   return (
     <div >
       <span className={styles.name}>Welcome, {name}</span>
-      <button type="button" onClick={() => dispatch(authOperations.logOut())}>
+      <Button variant="contained" type="button" onClick={() => dispatch(authOperations.logOut())}>
         Log out
-      </button>
+      </Button>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { authOperations } from '../../redux/auth';
 import styles from './RegisterPage.module.css';
+import Button from '@mui/material/Button';
 
 
 export default function RegisterPage() {
@@ -61,7 +62,8 @@ export default function RegisterPage() {
           />
         </label>
 
-        <button type="submit" className={styles.button}>Register</button>
+        {/* <button type="submit" className={styles.button}>Register</button> */}
+        <Button type="submit" variant="contained">Register</Button>
       </form>
     </div>
   );
