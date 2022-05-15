@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoit_react_hw_08_phonebook=self.webpackChunkgoit_react_hw_08_phonebook||[]).push([[689],{1689:function(e,t,n){n.r(t),n.d(t,{default:function(){return _}});var o="HomePage_title__UFLA3",c=n(184);function _(){return(0,c.jsx)("h1",{className:o,children:"Welcome!"})}}}]);
+//# sourceMappingURL=689.374f969d.chunk.js.map
