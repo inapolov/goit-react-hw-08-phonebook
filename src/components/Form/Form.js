@@ -48,7 +48,7 @@ function Form() {
     
    
         return (
-            <form onSubmit={formSubmit} >
+            <form onSubmit={formSubmit} className={styles.form}>
           <label className={styles.label}>
             Name
               <input
@@ -75,7 +75,7 @@ function Form() {
                 className={styles.input}
             />
           </label>
-          <button type="submit" disabled={isLoading}>Add contact</button>
+          <button type="submit" className={styles.button} disabled={isLoading}>Add contact</button>
         </form>
         );
     

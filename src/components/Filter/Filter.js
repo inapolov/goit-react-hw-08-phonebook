@@ -15,7 +15,7 @@ function Filter() {
     
     return (
 <label className={styles.label}>Find contacts by name
-        <input type="text" value={filter} onChange={changeFilter} className={styles.input}></input>
+        <input type="text" value={filter} onChange={changeFilter} ></input>
     </label>
     )   
 }

@@ -4,6 +4,7 @@ import { useFetchContactsQuery } from '../../redux/slice';
 import { useSelector } from 'react-redux';
 import ContactItem from "components/ContactItem";
 import Loader from "components/Loader";
+import styles from './ContactList.module.css';
 
 
 
@@ -25,7 +26,7 @@ return (
     <>
         {isFetching && <Loader />}
         {contacts && (
-            <ul>
+            <ul className={styles.list}>
                 {filtredContacts.map(contact => (
                     <li key={contact.id}>
                         <ContactItem contact={contact} />
