@@ -39,7 +39,14 @@ export default function RegisterPage() {
       <form onSubmit={handleSubmit} className={styles.form}  autoComplete="off">
         <label className={styles.label}>
           Name
-          <input type="text" name="name" value={name} onChange={handleChange} />
+          <input
+            type="text"
+            name="name"
+            value={name}
+            onChange={handleChange}
+            autoComplete="off"
+            required
+          />
         </label>
 
         <label className={styles.label}>
@@ -49,6 +56,8 @@ export default function RegisterPage() {
             name="email"
             value={email}
             onChange={handleChange}
+            autoComplete="off"
+            required
           />
         </label>
 
@@ -59,6 +68,8 @@ export default function RegisterPage() {
             name="password"
             value={password}
             onChange={handleChange}
+            autoComplete="off"
+            required
           />
         </label>
 

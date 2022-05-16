@@ -40,6 +40,8 @@ export default function LoginView() {
             name="email"
             value={email}
             onChange={handleChange}
+            autoComplete="off"
+            required
           />
         </label>
 
@@ -50,6 +52,8 @@ export default function LoginView() {
             name="password"
             value={password}
             onChange={handleChange}
+            autoComplete="off"
+            required
           />
         </label>
 
